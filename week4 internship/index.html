@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div><strong>FoodieExpress</strong></div>
+    <div class="nav-links">
+      <button onclick="showHome()">Home</button>
+      <button onclick="showCart()">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <h2>Order your favorite food online</h2>
+    <p>Fast, fresh, and delivered to your door!</p>
+  </section>
+
+  <!-- Food List -->
+  <div id="food-section" class="food-container"></div>
+
+  <!-- Cart View -->
+  <div id="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 FoodieExpress. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
